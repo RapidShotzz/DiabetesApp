@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Diabetes Prediction App</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+    </head>
+    <body>
+
+        <h1>Diabetes Prediction App</h1>
+
+        <h4>This is a Diabetes Prediction App based on an SVM machine learning model</h4>
+    
+        <div class="pregnancies">
+            <label for="pregnancies" class="pregnancies-label">Pregnancies:</label>
+            <input type="range" id="pregnancies" name="Pregnancies" min="0" max="20" value="0">
+            <span id="pregnancies-value">0</span>
+        </div>
+
+        <div class="glucose">
+            <label for="glucose" class="glucose-label">Glucose:</label>
+            <input type="range" id="glucose" name="Glucose" min="0" max="200" value="120">
+            <span id="glucose-value">120</span>
+        </div>
+
+        <div class="bloodpressure">
+            <label for="bloodpressure" class="bloodpressure-label">Blood Pressure:</label>
+            <input type="range" id="bloodpressure" name="Bloodpressure" min="0" max="140" value="80">
+            <span id="bloodpressure-value">80</span>
+        </div>
+
+        <div class="skinthickness">
+            <label for="skinthickness" class="skinthickness">Skin Thickness:</label>
+            <input type="range" id="skinthickness" name="skinthickness" min="0" max="100" value="20">
+            <span id="skinthickness-value">20</span>
+        </div>
+
+        <div class="insulin">
+            <label for="insulin" class="insulin-label">Insulin:</label>
+            <input type="range" id="insulin" name="Insulin" min="0" max="900" value="100">
+            <span id="insulin-value">100</span>
+        </div>
+
+        <div class="BMI">
+            <label for="BMI" class="BMI-label">BMI:</label>
+            <input type="range" id="BMI" name="BMI" min="0.0" max="70.0" value="15.0" step="0.1">
+            <span id="BMI-value">15.0</span>
+        </div>
+
+        <div class="diabetespedigreefunction">
+            <label for="diabetespedigreefunction" class="diabetespedigreefunction">Diabetes Pedigree Function:</label>
+            <input type="range" id="diabetespedigreefunction" name="diabetespedigreefunction" min="0.0" max="2.5" value="0.5" step="0.1">
+            <span id="diabetespedigreefunction-value">0.5</span>
+        </div>
+
+        <div class="age">
+            <label for="age" class="age-label">Age:</label>
+            <input type="range" id="age" name="Age" min="0" max="120" value="30">
+            <span id="age-value">30</span>
+        </div>
+
+    <button class="predict-button" onclick="predict()">Predict:</button>
+
+    <div id="prediction-result" class="prediction-result"></div>
+
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+    </body>
+</html>

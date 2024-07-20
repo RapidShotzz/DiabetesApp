@@ -1,0 +1,70 @@
+body {
+    background-image: url('/static/images/medicine.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@font-face {
+    src: url('../static/fonts/OpenSans-VariableFont_wdth,wght.ttf');
+    font-family: OpenSans;
+}
+
+h1 {
+    font-family: 'OpenSans';
+    text-align: center;
+    font-size: 36px;
+    color: rgb(69, 177, 213);
+    font-style: oblique;
+}
+
+h4 {
+    font-family: 'OpenSans';
+    text-align: center;
+    font-size: 25px;
+    color: rgb(69, 177, 213);
+    font-style: normal;
+}
+
+div.pregnancies,
+div.glucose,
+div.bloodpressure,
+div.skinthickness,
+div.insulin,
+div.BMI,
+div.diabetespedigreefunction,
+div.age {
+    text-align: center;
+    font-family: 'OpenSans';
+    font-size: 20px;
+    color: red;
+    margin-bottom: 40px; /* Adjust the value as needed */
+}
+
+.predict-button {
+    text-align: center;
+    font-family: OpenSans;
+    color: rgb(69, 177, 213);
+    font-size: 20px;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: rgb(17, 6, 75);
+    border: 2px solid rgb(69, 177, 213);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.predict-button:hover {
+    background-color: yellow;
+}
+.prediction-result {
+    text-align: center;
+    font-family: 'OpenSans';
+    font-size: 24px;
+    color: red;
+    margin-top: 20px;
+}
+
